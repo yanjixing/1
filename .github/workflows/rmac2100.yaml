@@ -27,8 +27,8 @@ on:
 
 
 #定时触发开始编译(utc時間)
-  schedule:
-    - cron: 02 17 * * *
+#$  schedule:
+ #   - cron: 02 17 * * *
 
 
 #点☆Star触发开始编译

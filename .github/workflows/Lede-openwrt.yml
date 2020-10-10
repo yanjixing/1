@@ -8,7 +8,7 @@
 #修改以下代码或者开启触发开关都好，要严格按格式对好,前面有多少空格也要看清楚
 #
 
-name: N1-Lede-OpenWrt 固件
+name: X86-Lede-OpenWrt 固件
 
 on:
   repository_dispatch:
@@ -32,8 +32,8 @@ on:
 
 
 #点☆Star触发开始编译
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 
 env:
@@ -97,9 +97,9 @@ jobs:
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
 
-    #- name: SSH远程连接服务器配置固件
-     # uses: P3TERX/debugger-action@main
-     # if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
+    - name: SSH远程连接服务器配置固件
+      uses: P3TERX/debugger-action@main
+      if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
 
     - name: 下载软件包
       id: package

@@ -29,8 +29,9 @@ git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-
 git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash  #clash出国软件
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan  #微信推送
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
-git clone https://github.com/GJXS1980/ODP.git package/ODP
+git clone https://github.com/kinglasy/ODP.git package/ODP
 git clone https://github.com/CHN-beta/xmurp-ua.git package/xmurp-ua
+git clone https://github.com/CHN-beta/rkp-ipid.git package/rkp-ipid
 
 #passwall出国软件
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/luci-app-passwall
